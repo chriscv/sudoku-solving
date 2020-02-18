@@ -1,3 +1,6 @@
+#brute force method is mostly impractical for typical boards
+#here we demonstrate finding a solution for a board that is almost entirely completed
+
 import itertools
 
 row1 = [7,5,1,8,4,6,9,2,3]
@@ -10,7 +13,7 @@ row7 = [5,6,2,0,1,7,8,0,0]
 row8 = [8,0,7,2,0,9,0,1,5]
 row9 = [0,1,0,4,8,5,0,6,2]
 initialBoard = [ row1, row2, row3, row4, row5, row6, row7, row8, row9 ]
-#potential improvements: start by checking if initialBoard is legal, e.g. [1,2,...,1] is not legal
+#potential improvements: start by checking if initialBoard is legal, e.g. row1 = [1,2,...,1] is not legal
 
 #prune rowPossibles
 legalDigits = [1,2,3,4,5,6,7,8,9]
